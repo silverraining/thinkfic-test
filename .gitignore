@@ -1,0 +1,25 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# dotenv 환경변수
+.env
+
+# logs
+*.log
+logs/
+npm-debug.log*
+
+# MacOS system files
+.DS_Store
+
+# IDE settings
+.vscode/
+.idea/
+*.sw?
+
+# TypeScript
+*.tsbuildinfo
