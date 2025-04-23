@@ -4,7 +4,7 @@ dotenv.config();
 
 export const enrollInBonusCourse = async (userId: number, courseId: number) => {
   const res = await axios.post(
-    `${process.env.THINKIFIC_API_BASE}/enrollments`,
+    `${process.env.THINKIFIC_BASE_UR}/enrollments`,
     {
       user_id: userId,
       course_id: courseId,

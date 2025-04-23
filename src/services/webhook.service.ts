@@ -5,7 +5,7 @@ dotenv.config();
 export const registerWebhook = async () => {
   try {
     const response = await axios.post(
-      `${process.env.THINKIFIC_API_BASE}/webhooks`,
+      `${process.env.THINKIFIC_BASE_URL}/webhooks`,
       {
         topic: "enrollment.completed",
         target_url: process.env.WEBHOOK_TARGET_URL,
