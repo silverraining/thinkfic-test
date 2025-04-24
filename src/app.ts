@@ -15,11 +15,6 @@ app.use(express.json());
 // 라우터 등록
 app.use("/webhook", webhookRoutes);
 
-// 테스트용 라우트
-app.use("/test", (_req, _res, next) => {
-  next({ statusCode: 401, message: "test" });
-});
-
 // Swagger 문서 설정
 setupSwagger(app);
 

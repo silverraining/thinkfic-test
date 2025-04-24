@@ -28,7 +28,7 @@ export const handleWebhook = async (
     }
     res.status(200).json({ received: true });
   } catch (err) {
-    console.error("❌ Webhook Error:", err);
+    console.error("Webhook Error:", err);
     res.status(500).json({ error: "Server error" });
   }
 };
